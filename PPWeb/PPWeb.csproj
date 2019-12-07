@@ -261,6 +261,7 @@
     <Content Include="Models\ModelsSocio.edmx.diagram">
       <DependentUpon>ModelsSocio.edmx</DependentUpon>
     </Content>
+    <Content Include="Base de Datos BackUp\PPWeb.bak" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
