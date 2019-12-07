@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPWeb", "PPWeb\PPWeb.csproj", "{35EAD9B2-6AA9-4908-BBB9-6777CF7E5264}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35EAD9B2-6AA9-4908-BBB9-6777CF7E5264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EAD9B2-6AA9-4908-BBB9-6777CF7E5264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EAD9B2-6AA9-4908-BBB9-6777CF7E5264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EAD9B2-6AA9-4908-BBB9-6777CF7E5264}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {500FB8B3-846E-4C81-9829-5B79F2BAE3C2}
+	EndGlobalSection
+EndGlobal

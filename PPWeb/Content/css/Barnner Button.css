@@ -1,0 +1,6 @@
+﻿.banner-bottom {
+    position: absolute;
+    left: 13%;
+    top: 88%;
+    z-index: 999;
+}

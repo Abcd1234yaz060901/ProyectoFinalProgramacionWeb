@@ -1,0 +1,75 @@
+﻿@model PPWeb.Models.Usuarios
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>ELIMINAR USUARIOS</h2>
+
+<h3>Estas seguro de que quieres eliminar este usuario?</h3>
+<div>
+    <h4>Usuarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROLES.DescripcionRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROLES.DescripcionRol)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+
+
+            @Html.ActionLink("Volver al Inicio", "login", "Home", new { rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo }, null)
+
+        </div>
+    }
+</div>

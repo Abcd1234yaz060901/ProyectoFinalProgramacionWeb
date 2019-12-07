@@ -1,0 +1,68 @@
+﻿@model PPWeb.Models.Usuarios
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<h2>DETALLES DE USUARIOS</h2>
+
+<div>
+    <h4>Usuarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROLES.DescripcionRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROLES.DescripcionRol)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id, rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo }) |
+
+
+    @Html.ActionLink("Volver al Inicio", "login", "Home", new { rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo }, null)
+
+</p>

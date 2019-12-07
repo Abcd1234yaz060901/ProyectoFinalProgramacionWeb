@@ -1,0 +1,149 @@
+﻿@model IEnumerable<PPWeb.Models.Socios>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>SOCIOS</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Foto)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefonos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreAfiliado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LugarDeTrabajo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DireccionOficina)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefonoOficina)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaIngreso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaSalida)
+        </th>
+        <th>
+            <A>Tipo Afiliado</A>
+        </th>
+        <th>
+            <A>Membresia</A>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cedula)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Foto)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefonos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Edad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreAfiliado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LugarDeTrabajo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DireccionOficina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoOficina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaIngreso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaSalida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Afiliados.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TiposMembresias.Nombre)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.SocioId , rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo}) |
+                @Html.ActionLink("Details", "Details", new { id = item.SocioId, rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.SocioId, rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo })
+            </td>
+        </tr>
+    }
+
+</table>

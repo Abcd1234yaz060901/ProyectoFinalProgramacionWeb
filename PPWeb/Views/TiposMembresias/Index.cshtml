@@ -1,0 +1,56 @@
+﻿@model IEnumerable<PPWeb.Models.TiposMembresias>
+
+@{
+    ViewBag.Title = "Tipos_de_membresia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>TIPOS DE MEMBRESIA</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Costo)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Costo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MembresiaID ,rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo}) |
+                @Html.ActionLink("Details", "Details", new { id = item.MembresiaID ,rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo}) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MembresiaID,rol = ViewBag.Rol, Usuario = ViewBag.UsuarioActual, NombreUsuario = ViewBag.NombreUsuario, Correo = ViewBag.Correo })
+            </td>
+        </tr>
+    }
+
+</table>

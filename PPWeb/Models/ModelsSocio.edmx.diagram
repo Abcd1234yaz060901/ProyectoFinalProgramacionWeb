@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ea2dac2576694d35888f00f2d526a41c" Name="Diagram1">
+        <EntityTypeShape EntityType="PPWebModel1.Afiliados" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPWebModel1.ROLES" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPWebModel1.Socios" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPWebModel1.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPWebModel1.TiposMembresias" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPWebModel1.Usuarios" Width="1.5" PointX="8" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="PPWebModel1.FK_Socios_Afiliados" ManuallyRouted="false" />
+        <AssociationConnector Association="PPWebModel1.FK_Usuarios_ROLES" ManuallyRouted="false" />
+        <AssociationConnector Association="PPWebModel1.FK_Socios_TiposMembresias" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
